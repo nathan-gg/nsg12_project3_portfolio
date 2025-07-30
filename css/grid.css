@@ -1,40 +1,40 @@
-body{
-    /* margin: 0; */
-    width: 100vw;
-    height: 100vh;
-    overflow-x: clip;
+body {
+  /* margin: 0; */
+  width: 100vw;
+  height: 100vh;
+  overflow-x: clip;
 }
 
-header{
-    width: 2rem;
+header {
+  width: 2rem;
 }
 
-.landing-section{
-    display: grid;
-    grid: repeat(12, 1fr) / repeat(12, 1fr);
-    width: 100vw;
-    height: 100vh;
+.landing-section {
+  display: grid;
+  grid: repeat(12, 1fr) / repeat(12, 1fr);
+  width: 100vw;
+  height: 100vh;
 }
 
-.landing-section h1{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 8;
-    background-color: #CFFFFE;
+.landing-section h1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  background-color: #cffffe;
 }
 
-.intro-text{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 4;
-    grid-column-end: 9;
-    /* background-color: #CFFFFE; */
+.intro-text {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 9;
+  /* background-color: #CFFFFE; */
 }
 
-.continue{
-    grid-row-start: 7;
-    grid-row-end: 8;
-    grid-column-start: 6;
-    grid-column-end: 8;
+.continue {
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 6;
+  grid-column-end: 8;
 }

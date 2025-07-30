@@ -1,53 +1,54 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    /* background-color: #FF7E00; */
-    background-color: #FDFFEA;
-    font-family: GT-Flexa-Mono, monospace;
-    font-weight: 500;
-    background-image: url('../img/blue-grid.webp');
-    /* background-attachment: fixed; */
+body {
+  /* background-color: #FF7E00; */
+  background-color: #fdffea;
+  font-family: GT-Flexa-Mono, monospace;
+  font-weight: 500;
+  background-image: url("../img/blue-grid.webp");
+  /* background-attachment: fixed; */
 }
 
-h1{
-    color: #FEBE75;
-    font-family: Financier-Display, serif;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 12rem;
+h1 {
+  color: #febe75;
+  font-family: Financier-Display, serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 12rem;
 }
 
-h2{
-    color: #FF4400;
+h2 {
+  color: #ff4400;
 }
 
-p, a{
-    color: #000000;
+p,
+a {
+  color: #000000;
 }
 
-p mark{
-    background-color: #CFFFFE;
+p mark {
+  background-color: #cffffe;
 }
 
-p{
-    font-size: 1.5rem;
+p {
+  font-size: 1.5rem;
 }
 
-.navbar a{
-    text-decoration: none;
+.navbar a {
+  text-decoration: none;
 }
 
-.navbar{
-    position: sticky;
-    top: 0rem;
+.navbar {
+  position: sticky;
+  top: 0rem;
 }
 
-.landing-section{
-    /* height: 100vh; */
+.landing-section {
+  /* height: 100vh; */
 }
 
-.continue{
-    text-decoration: none;
+.continue {
+  text-decoration: none;
 }
