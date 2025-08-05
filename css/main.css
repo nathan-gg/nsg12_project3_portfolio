@@ -1,3 +1,44 @@
+/* for google material icons */
+
+.material-icons {
+  font-family: 'Material Icons Outlined';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,6 +50,9 @@ body {
   font-weight: 500;
   background-image: url("../img/blue-grid.webp");
   /* background-attachment: fixed; */
+
+  cursor: url(../img/transparent-cursor.svg) 11 11, auto;
+  transition: color .3s ease;
 }
 
 h1 {
@@ -16,39 +60,420 @@ h1 {
   font-family: Financier-Display, serif;
   font-weight: 900;
   font-style: italic;
-  font-size: 12rem;
+  font-size: 3rem;
 }
 
 h2 {
-  color: #ff4400;
+  color: #000000;
+  font-size: 1.5rem;
 }
 
-p,
 a {
   color: #000000;
+  text-decoration: none;
+  font-style: italic;
+
+  transition: color .3s ease;
 }
+
+a:hover{
+  color: #ff4400;
+  cursor: url(../img/test-cursor.svg) 11 11, pointer;
+  transition: color .3s ease;
+}
+
+
+
+/* a:hover{
+  background-color: #febe75;
+  color: #000000;
+} */
 
 p mark {
   background-color: #cffffe;
 }
 
 p {
-  font-size: 1.5rem;
+  color: #000000;
+  font-size: .8rem;
 }
 
-.navbar a {
+.hero-image-container figure{
+  margin: 0;
+  cursor: url(../img/zoom-in-cursor.svg) 11 11, zoom-in;
+}
+
+figcaption{
+  font-weight: 500;
+  font-size: .8rem;
+  text-align: left;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 6rem;
+  gap: .5rem;
+}
+
+nav a{
   text-decoration: none;
+  font-size: .8rem;
 }
 
-.navbar {
-  position: sticky;
-  top: 0rem;
+.site-footer a{
+  text-decoration: none;
+  font-size:.8rem;
+}
+/* nav a:hover{
+  color: #ff4400;
+} */
+
+a .item-hover{
+  display: none;
+}
+
+a:hover .item-static{
+  display: none;
+}
+
+a:hover .item-hover{
+  display: inline;
+}
+
+nav span.material-symbols-outlined, .site-footer span.material-symbols-outlined{
+  font-size: .9rem;
+  position: relative;
+  top: .2rem;
+  left: -.3rem;
+}
+
+.site-footer{
+  margin-top: 0rem;
+  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 8rem;
+  font-size: .8rem;
+}
+
+.about-footer{
+  padding-bottom: 2rem;
+}
+
+.project-thumbnail-text a span.material-symbols-outlined{
+  font-size: 1.4rem;
+  position: relative;
+  top: .2rem;
+  left: -.3rem;
 }
 
 .landing-section {
-  /* height: 100vh; */
+  min-height: 100vh;
+}
+
+.section-title{
+  margin: 0;
+}
+
+.case-title{
+  font-size: 3rem;
+  margin-top: 10rem;
+  margin-bottom: 0;
+}
+
+.about-title{
+  font-size: 8rem;
+  margin-bottom: 0;
+}
+
+.case-study-page h2{
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.case-study-page p{
+  padding-left: 2rem;
+  line-height: 1.5rem;
+}
+
+.case-study-page h3{
+font-size: 1rem;}
+
+.case-study-page h4{
+  font-size: .8rem;
+  text-decoration: underline;
 }
 
 .continue {
   text-decoration: none;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.project-item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-thumbnail-text{
+  width: 24rem;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.project-thumbnail-text p{
+  width: 12rem;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.project-thumbnail-image{
+  object-fit: contain;
+  max-width: 12rem;
+}
+
+.image-link{
+  box-sizing: border-box;
+  border: #febe75;
+  border-style: solid;
+  border-width: .2rem;
+  transition: all .3s ease-in-out;
+}
+
+.image-link:hover{
+  position: relative;
+  translate: -.5rem -.5rem;
+  box-shadow: .5rem .5rem #febe75;
+  
+}
+
+.hero-image-container{
+  position: relative;
+  top: 8rem;
+}
+
+.hero-image{
+  object-fit: contain;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: #febe75;
+  border-style: solid;
+  border-width: .2rem;
+}
+
+.popover-image-container{
+  border-style: none;
+  background:none;
+}
+
+.popover-image-container:hover{
+  cursor: pointer;
+}
+
+#popover-image{
+  border-style: none;
+  background:none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+}
+
+#popover-image:hover{
+  cursor: url(../img/zoom-out-cursor.svg) 11 11, zoom-out;
+}
+
+.about-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-text p{
+  max-width: 24rem;
+  line-height: 1.5rem;
+}
+
+.about-text img{
+  min-width: 6rem;
+  object-fit: cover;
+
+  box-sizing: border-box;
+  border: #febe75;
+  border-style: solid;
+  border-width: .2rem;
+}
+
+.about-image-desktop{
+  display: none;
+}
+
+@media(width >= 76rem){
+
+h1 {
+  font-size: 12rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+nav {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 8rem;
+}
+
+nav a{
+  font-size: 1rem;
+}
+
+.site-footer a{
+  font-size: 1rem;
+}
+
+
+nav span.material-symbols-outlined{
+  font-size: .9rem;
+}
+
+.site-footer{
+  margin-top: 4rem;
+  padding: 2rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+}
+
+
+
+.project-thumbnail-text a span.material-symbols-outlined{
+  font-size: 1.4rem;
+  position: relative;
+  top: .2rem;
+  left: -.3rem;
+}
+
+.landing-section {
+  min-height: 100vh;
+}
+
+.section-title{
+  margin: 0;
+}
+
+.case-title, .about-title{
+  font-size: 8rem;
+  margin-bottom: 0;
+}
+
+.case-study-page h2{
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.case-study-page p{
+  font-size: 1rem;
+  padding-left: 2rem;
+  line-height: 1.5rem;
+}
+
+.case-study-page h3{
+  font-size: 1.5rem;
+}
+
+.case-study-page h4{
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.project-item{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.project-thumbnail-text{
+  width: 24rem;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.project-thumbnail-text p{
+  width: 24rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.project-thumbnail-image{
+  object-fit: contain;
+  max-width: 25rem;
+}
+
+.image-link{
+  border-width: .2rem;
+}
+
+.image-link:hover{
+  top: -.5rem;
+  left: -.5rem;
+  box-shadow: .5rem .5rem #febe75;
+}
+
+.hero-image-container{
+  top: 4rem;
+}
+
+.hero-image{
+  border-width: .2rem;
+}
+
+.about-text {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-text p{
+  font-size: 1rem;
+  max-width: 28rem;
+  line-height: 1.5rem;
+}
+
+.about-text img{
+  object-fit: cover;
+  min-width: 16rem;
+  border-width: .2rem;
+}
+
+.about-image-mobile{
+  display: none;
+}
+
+.about-image-desktop{
+  display: inline;
+}
+
+.about-footer{
+  position: absolute;
+  bottom: 2rem;
+  padding-bottom: 0;
+}
+
 }

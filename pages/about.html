@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <title>Nathan Gebreab - About</title>
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  </head>
+  <body>
+    <header aria-label="Main Navigation" class="">
+      
+      <nav class="nav-items">
+        <!-- text changing on hover is referenced from https://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text -->
+
+        <!-- go to home -->
+        <a href="../index.html">
+          <span class="item-static">Home</span>
+          <span class="item-hover">Home
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
+
+        <!-- go to about page -->
+        <a href="../pages/about.html">
+          <span class="item-static">About</span>
+          <span class="item-hover">About
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
+
+        <!-- take user to projects section is on landing page, otherwise take user to landing then scroll down to section -->
+        <a href="../index.html#landing-projects-id">
+          <span class="item-static">Projects</span>
+          <span class="item-hover">Projects
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
+
+        <!-- take user to footer -->
+        <a href="#footer">
+          <span class="item-static">Contact</span>
+          <span class="item-hover">Contact
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
+      </nav>
+    </header>
+
+    <section class="about-section">
+      <h1 class="section-title">About</h1>
+      <div class="about-text">
+        <img class="about-image-mobile" src="../img/about-image.webp" alt="A picture of me (Nathan Gebreab), kneeling next to a rabbit.">
+        <p>
+          I am based in Vancouver, British Columbia, Canada, and currently pursuing an Interactive Arts and Technology BSc at Simon Fraser University. Some of my favourite things to do are: cooking new recipes, watching basketball, and listening to music! I also enjoy doing visual design work in my free time and learning as much as I can!
+        </p>
+        <img class="about-image-desktop" src="../img/about-image.webp" alt="A picture of me (Nathan Gebreab), kneeling next to a rabbit.">
+        
+      </div>
+
+    </section>
+
+<footer class="about-footer site-footer" id="footer">
+      See what I'm up to!
+      <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/nathan-gebreab-ba3230313/">
+        <span class="item-static">LinkedIn</span>
+          <span class="item-hover">LinkedIn
+          <span class="material-symbols-outlined right-arrow">
+            arrow_forward
+          </span> 
+          </span> 
+      </a>
+      <a class="footer-link" target="_blank" href="https://github.com/nathan-gg?tab=repositories">
+        <span class="item-static">Github</span>
+          <span class="item-hover">Github
+          <span class="material-symbols-outlined right-arrow">
+            arrow_forward
+          </span> 
+          </span> 
+      </a>
+    </footer>
+
+  </body>
+</html>

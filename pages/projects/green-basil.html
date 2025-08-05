@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <title>Nathan Gebreab - Green Basil Thai Restaurant</title>
+
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/grid.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  </head>
+  <body>
+    <header aria-label="Main Navigation" class="">
+      
+      <nav class="nav-items">
+        <!-- text changing on hover is referenced from https://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text -->
+
+        <!-- go to home -->
+        <a href="../../index.html">
+          <span class="item-static">Home</span>
+          <span class="item-hover">Home
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
+
+        <!-- go to about page -->
+        <a href="../about.html">
+          <span class="item-static">About</span>
+          <span class="item-hover">About
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
+
+        <!-- take user to projects section is on landing page, otherwise take user to landing then scroll down to section -->
+        <a href="../../index.html#landing-projects-id">
+          <span class="item-static">Projects</span>
+          <span class="item-hover">Projects
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
+
+        <!-- take user to footer -->
+        <a href="#footer">
+          <span class="item-static">Contact</span>
+          <span class="item-hover">Contact
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
+      </nav>
+    </header>
+
+    <section class="case-study-page" id="">
+        <button popover id="popover-image" popovertarget="popover-image" popovertargetaction="hide">
+        <figure>
+            <img  class="hero-image" src="../../img/gb-thumbnail.webp" alt="A screenshot of the Green Basil Restaurant Website landing page.">
+            <figcaption>Click anywhere to close image!</figcaption>
+        </figure>
+            
+        </button>
+        <button popovertarget="popover-image" class="hero-image-container popover-image-container">
+            <figure>
+                <img  class="hero-image" src="../../img/gb-thumbnail.webp" alt="A screenshot of the Green Basil Restaurant Website landing page.">
+                <figcaption>Click on image for fullscreen!</figcaption>
+            </figure>
+        </button>
+        <h1 class="case-title">Green Basil</h1>
+        <!-- <section class="main-case-section"> -->
+        <div class="project-details">
+            <h2>Project Details</h2>
+            <p>Completion Date: May 2025</p>
+            <p>See the finished project: 
+                <a target="_blank" href="https://gb-2ce.pages.dev/home">https://gb-2ce.pages.dev/home</a>
+            </p>
+            <p class="role">Role: Lead Developer</p>
+            <p class="skills">Skills: Svelte, Figma, HTML, CSS, JS</p>
+            <p class="team">Team Members: Ethan Li (UX/UI), Tirsten Lisondra (UX/UI), Max Li (Project Supervisor)</p>
+        </div>
+
+        <div class="overview">
+            <h2>Description</h2>
+            <p>Green Basil Thai Restaurant is located in Burnaby, BC, and has been a cornerstone of Thai cuisine since 2006. For this project, our team was tasked with redesigning and modernizing their website to appeal to a new generation of customers.</p>
+
+            <p>My Goals: In this project, my goal was to develop a website that was both functional and easy to use. Additionally, as we were not given a concrete deadline for the project, I took my time to learn as many new skills as possible, including how to use the UI framework known as Svelte.</p>
+        </div>
+
+        <div class="case-content">
+            <h2>Process</h2>
+            <h3>Stage 1: Making a Plan</h3>
+                <p>My goal in developing this project was to approach it with a learn-first mentality. This meant that I spent the initial stages of the project reading the Svelte Documentation and familiarizing myself with its many capabilities and features. This allowed me to have clearer communication with the design team, as I had a better understanding of different web interactions and how I would implement their ideas using code.</p>
+            <h3>Stage 2: Development</h3>
+                <p>In the working process, I focused on constant testing and clear communication with the design team. As I developed each page, I would make sure to test responsiveness, link validity, and interaction design to make sure the desired product was being made. Additionally, I adopted a rigid schedule to keep myself on task and ensure that progress was always being made for our regular meetings.</p>
+            <h3>Stage 3: Reflection</h3>
+                <h4>Struggles & Solutions</h4>
+                    <p>The struggle: As a first-time solo developer working with a lesser-known framework like Svelte, debugging was a tedious process, with some bugs taking a week to resolve. A specific bug occurred with the snap-scrolling effect on certain pages, where some content would no longer be visible, the overflow margins would be incorrect, or other features would no longer function.</p>
+                    <p>The solution: While the fix ended up being a simple CSS error, an important thing that this taught me was to re-evaluate and come back to a problem with a different mindset. Instead of getting stuck on this one bug, I was able to be productive in other areas, learn new things, and develop separate skills, so that by the time this bug resurfaced to the top of my to-do list, I was ready to tackle it.</p>
+                <h4>What I Would Do Different</h4>
+                    <p>One of the main things I learned as I worked was the importance of web scaffolding and developing a solid foundation. Thus, if I were to do this project again, I would approach it more systematically from the very beginning. I would collect all the data I need, organize it into JavaScript files that have the parameters of the data sorted into the groups needed, and then begin the HTML and CSS.</p>
+                <h4>What I Learned</h4>
+                    <p>I gained many skills throughout this project, most significantly working within Svelte, a UI framework, for the first time. I learned about the importance of proper scaffolding, the length of the iterative process and debugging, and how to keep a consistent work schedule to keep a team motivated.</p>
+        </div>
+        <!-- </section> -->
+    </section>
+
+    <footer class="site-footer" id="footer">
+      See what I'm up to!
+      <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/nathan-gebreab-ba3230313/">
+        <span class="item-static">LinkedIn</span>
+        <span class="item-hover">LinkedIn
+        <span class="material-symbols-outlined right-arrow">
+            arrow_forward
+        </span> 
+        </span> 
+      </a>
+      <a class="footer-link" target="_blank" href="https://github.com/nathan-gg?tab=repositories">
+        <span class="item-static">Github</span>
+          <span class="item-hover">Github
+          <span class="material-symbols-outlined right-arrow">
+            arrow_forward
+          </span> 
+          </span> 
+      </a>
+    </footer>
+  </body>
+</html>

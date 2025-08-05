@@ -12,32 +12,62 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   </head>
   <body>
-    <header aria-label="Main Navigation" class="navbar flex">
-      <a href="index.html">Home</a>
-      <div class="nav-items">
+    <header aria-label="Main Navigation" class="">
+      
+      <nav class="nav-items">
+        <!-- text changing on hover is referenced from https://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text -->
+
+        <!-- go to home -->
+        <a href="index.html">
+          <span class="item-static">Home</span>
+          <span class="item-hover">Home
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
+
         <!-- go to about page -->
-        <a href="pages/about.html">About</a>
+        <a href="./pages/about.html">
+          <span class="item-static">About</span>
+          <span class="item-hover">About
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
 
         <!-- take user to projects section is on landing page, otherwise take user to landing then scroll down to section -->
-        <a href="index.html">Work</a>
+        <a href="#landing-projects-id">
+          <span class="item-static">Projects</span>
+          <span class="item-hover">Projects
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
 
         <!-- take user to footer -->
-        <a href="index.html">Contact</a>
-      </div>
+        <a href="#footer">
+          <span class="item-static">Contact</span>
+          <span class="item-hover">Contact
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+        </a>
+      </nav>
     </header>
 
     <section class="landing-section landing-intro">
-      <h1>Welcome,</h1>
+      <h1 class="section-title">Welcome!</h1>
       <div class="intro-text">
         <p>
-          My name is <mark>Nathan Gebreab</mark>, and I am a
-          <mark>front-end web developer.</mark>
+          My name is Nathan Gebreab, and I am a
+          front-end web developer, based in Vancouver, BC!
         </p>
         <p>
           My goal with every website I create is not only to fulfill user needs,
@@ -49,14 +79,50 @@
     </section>
 
     <section class="landing-section landing-projects" id="landing-projects-id">
-      <h1>Projects</h1>
 
-      <div class="project-thumbnail">
-        <div class="project-thumbnail-text"></div>
-        <div class="project-thumbnail-image"></div>
+      <h1 class="section-title">Projects</h1>
+
+      <div class="project-item">
+        <div class="project-thumbnail-text">
+          <a href="./pages/projects/green-basil.html">
+            <span class="item-static">Green Basil Thai Restaurant</span>
+            <span class="item-hover">Green Basil Thai Restaurant
+            <span class="material-symbols-outlined right-arrow">
+              arrow_forward
+            </span> 
+          </span>
+          </a>
+
+          <p>A modernized website for a Metro Vancouver staple.</p>
+          
+        </div>
+        <a href="./pages/projects/green-basil.html">
+          <img class="project-thumbnail-image image-link" src="./img/gb-thumbnail.webp" alt="A screenshot of the Green Basil Restaurant Website landing page.">
+        </a>
+          
       </div>
     </section>
 
-    <!-- <footer class="site-footer landing-card"></footer> -->
+    <footer class="site-footer" id="footer">
+      See what I'm up to!
+      <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/nathan-gebreab-ba3230313/">
+        <span class="item-static">LinkedIn</span>
+          <span class="item-hover">LinkedIn
+          <span class="material-symbols-outlined  right-arrow">
+            arrow_forward
+          </span> 
+          </span> 
+      </a>
+      <a class="footer-link" target="_blank" href="https://github.com/nathan-gg?tab=repositories">
+        <span class="item-static">Github</span>
+          <span class="item-hover">Github
+          <span class="material-symbols-outlined  right-arrow">
+            arrow_forward
+          </span> 
+          </span> 
+      </a>
+    </footer>
+
+
   </body>
 </html>
